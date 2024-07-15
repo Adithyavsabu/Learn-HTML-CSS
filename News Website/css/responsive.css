@@ -1,0 +1,31 @@
+@media screen and (min-width: 800px) {
+  .columns,
+  .column {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .first-article {
+    flex-direction: row;
+  }
+
+  .first-article .article-body {
+    flex: 1;
+  }
+
+  .first-article .article-image {
+    height: 300px;
+    order: 2;
+    padding-top: 0;
+    width: 400px;
+  }
+
+  .main-column {
+    flex: 3;
+  }
+
+  .nested-column {
+    flex: 2;
+  }
+}
