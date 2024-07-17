@@ -42,3 +42,16 @@ body {
 .avatar-container {
   /* flex-basis: 100px; */
 }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: antiquewhite;
+  align-items: center;
+}
+
+button {
+  height: 50px;
+  width: 100px;
+}
