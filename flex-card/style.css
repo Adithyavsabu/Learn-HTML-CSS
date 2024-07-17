@@ -1,0 +1,44 @@
+body {
+  background-color: #2d3436;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  width: 450px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.img {
+  border-radius: 50%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.details-container {
+  flex: 2;
+}
+
+.avatar-container {
+  /* flex-basis: 100px; */
+}
