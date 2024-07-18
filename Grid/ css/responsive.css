@@ -1,0 +1,80 @@
+/* Responsive */
+@media (min-width: 300px) and (max-width: 480px) {
+  * {
+    font-size: 1rem;
+  }
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  nav {
+    margin: 0 1.5rem 0 1.5rem;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    margin-right: 2rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: -3rem auto 0 auto;
+  }
+
+  /* Clients logos */
+  .clients-logos {
+    margin-top: 2rem;
+  }
+
+  .clients-logos img {
+    width: 30rem;
+  }
+
+  .clients-logos {
+    margin-top: 1rem;
+    display: flex;
+  }
+
+  .clients-logos img:nth-child(2) {
+    width: 7rem;
+  }
+
+  /* Images */
+  .desktop-img {
+    display: none;
+  }
+  .mobile-img {
+    display: block;
+    margin-top: 3rem;
+  }
+
+  .cta-btns,
+  .menu-items {
+    display: none;
+  }
+
+  main h1 {
+    font-size: 2.5rem;
+  }
+
+  /* Client Logos */
+  .clients-logos img {
+    width: 4.5rem;
+    margin-right: 0.8rem;
+  }
+
+  .attribution {
+    width: 13rem;
+    margin: 10rem auto 0 auto;
+    text-align: center;
+  }
+}
