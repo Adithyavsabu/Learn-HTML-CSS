@@ -1,4 +1,4 @@
-const textArray = [
+const imgArray = [
   "https://assets.codepen.io/1506195/unsplash-music-0.avif",
   "https://assets.codepen.io/1506195/unsplash-music-1.avif",
   "https://assets.codepen.io/1506195/unsplash-music-2.avif",
@@ -16,9 +16,9 @@ const div = document.createElement("div");
 div.className = "gallery";
 
 // Create an array to hold the elements
-const elements = textArray.map((text) => {
+const elements = imgArray.map((link) => {
   const img = document.createElement("img");
-  img.src = text;
+  img.src = link;
   div.appendChild(img);
 
   return div;
