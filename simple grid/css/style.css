@@ -1,0 +1,42 @@
+.parent-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100vh;
+  grid-gap: 10px;
+}
+.grid {
+  background-color: rgb(228, 18, 228);
+  grid-row: 1 / span 3;
+  grid-column: 1;
+}
+
+.second-grid {
+  grid-row: 1;
+  grid-column: 2;
+  background-color: rgb(116, 18, 228);
+}
+
+.third-grid {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  background-color: rgb(18, 228, 53);
+}
+
+.fourth-grid {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  background-color: rgb(228, 95, 18);
+}
+
+.fifth-grid {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  background-color: rgb(18, 228, 112);
+}
+
+.sixth-grid {
+  grid-row: 3/4;
+  grid-column: 3/4;
+  background-color: rgb(6, 14, 9);
+}
