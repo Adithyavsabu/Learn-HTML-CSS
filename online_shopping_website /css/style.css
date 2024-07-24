@@ -1,0 +1,146 @@
+/* header section starts here */
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 0.2rem 3rem;
+  font-size: 1rem;
+}
+
+.top-bar-right ul {
+  display: flex;
+  flex-direction: row;
+}
+.top-bar-right li {
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.top-bar-left ul {
+  display: flex;
+  flex-direction: row;
+}
+.top-bar-left li {
+  text-decoration: none;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.top-bar-left select {
+  border: none;
+  background-color: white;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem 3rem;
+}
+
+.logo-container span {
+  font-size: 700;
+}
+
+.logo-container span:nth-of-type(1) {
+  color: #ffd333;
+  background-color: #343a40;
+}
+
+.logo-container span:nth-of-type(2) {
+  color: #343a40;
+  background-color: #ffd333;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+}
+.search-container input[type="text"] {
+  width: 100%;
+  padding: 12px 50px;
+  border: 1px solid rgb(202, 199, 199);
+}
+
+.search-container button {
+  background-color: white;
+  border: 1px solid rgb(202, 199, 199);
+  padding: 10px 15px;
+  cursor: pointer;
+  border-left: none;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #343a40;
+  padding: 0rem 2.5rem;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menu ul {
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu li {
+  color: white;
+  margin-left: 1rem;
+}
+
+.categories select {
+  background-color: #ffd333;
+  color: black;
+  padding: 1.5rem 0rem;
+  padding-right: 4rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart a {
+  margin-right: 40px;
+}
+
+.badge {
+  position: absolute;
+  margin-top: 2px;
+  padding: 3px 6px;
+  border-radius: 50%;
+  color: white;
+  border: 1px solid #ffffff;
+  font-size: 0.5rem;
+  margin-left: 4px;
+}
+
+.services {
+  display: flex;
+  width: 100%;
+
+  justify-content: space-between;
+
+  flex-direction: row;
+}
+
+.small-card {
+  display: flex;
+  width: 18rem;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  text-align: center;
+}
