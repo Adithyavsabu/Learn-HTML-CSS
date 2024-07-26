@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- an example on how to access the data  -->
+    <div x-data="{ name: 'chidume', age: 28 }">
+      <div>Name: <b x-text="name"></b></div>
+
+      <div>Age: <b x-text="age"></b></div>
+    </div>
+
+    <!-- the data cannot be accessed by the elements outside the dom element  -->
+    <br />
+    <p>An example for data not accessable outside the parent :</p>
+    <div x-data="{ name: 'chidume', nickname: 'ND', age: 28 }">
+      <div>Name: <b x-text="name"></b></div>
+
+      <div>Age: <b x-text="age"></b></div>
+    </div>
+
+    <div>
+      <div>Nickname: <b x-text="nickname"></b></div>
+    </div>
+
+    <!-- how to access data using script  -->
+    <br />
+    <p>An example for data accessing using script:</p>
+    <div x-data="init()">
+      <div>Name:<span x-text="name"></span></div>
+
+      <button @click="setName('nnamdi')">Set Name</button>
+    </div>
+
+    <!-- accessing data from a script -->
+    <div x-data="buttonComponent()">
+      <button @click="handleClick" :class="buttonClass">
+        <span x-text="buttonText"></span>
+      </button>
+    </div>
+  </body>
+  <script>
+    function init() {
+      return {
+        name: "",
+
+        setName: function (name) {
+          this.name = name;
+        },
+      };
+    }
+  </script>
+  <script src="js/button.js"></script>
+</html>
