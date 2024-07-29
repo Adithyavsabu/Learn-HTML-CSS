@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categories Section</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js"
+      defer
+    ></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <style>
+      .category-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 16px;
+        text-align: center;
+        transition: transform 0.2s;
+        margin: 10px;
+      }
+      .category-card:hover {
+        transform: scale(1.05);
+      }
+      .category-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+      .category-card h3 {
+        margin: 16px 0 8px;
+      }
+      .categories-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      x-data="{
+        categories: [
+            {
+                id: '90b36cfe-46c5-403b-8fda-64191dfb8496',
+                name: 'Handcrafted Metal Hat',
+                image: 'https://picsum.photos/seed/hIrRmJ2Y/640/480',
+                link: 'https://forthright-pigeon.org'
+            },
+            {
+                id: '8adb5d93-a332-4831-a8db-da5372fcebdb',
+                name: 'Elegant Concrete Keyboard',
+                image: 'https://loremflickr.com/640/480?lock=7036015577399296',
+                link: 'https://sturdy-gall-bladder.info'
+            },
+            {
+                id: '2d7613f1-f9e7-421e-93f2-55500544d6f5',
+                name: 'Awesome Soft Sausages',
+                image: 'https://picsum.photos/seed/1q3K6/640/480',
+                link: 'https://waterlogged-refund.net'
+            },
+            {
+                id: '4e6c92bd-7eed-4e0c-97d9-39539bade185',
+                name: 'Sleek Frozen Table',
+                image: 'https://picsum.photos/seed/zKNqdc/640/480',
+                link: 'https://grave-lemon.name/'
+            },
+            {
+                id: '63cf8957-b2f7-41fa-a984-2d9f2ff50b67',
+                name: 'Refined Cotton Hat',
+                image: 'https://loremflickr.com/640/480?lock=5629342650466304',
+                link: 'https://aching-western.com'
+            },
+            {
+                id: '563cb809-6455-416c-b9df-990ec2cd3852',
+                name: 'Licensed Soft Shirt',
+                image: 'https://picsum.photos/seed/bw7JvTXM/640/480',
+                link: 'https://kindhearted-footwear.com/'
+            },
+            {
+                id: '8ca347ac-efa7-43b5-abf0-4964d5ab559a',
+                name: 'Licensed Plastic Bike',
+                image: 'https://loremflickr.com/640/480?lock=1749819003502592',
+                link: 'https://self-assured-finish.com'
+            },
+            {
+                id: 'db87aa52-08ba-4117-b425-8b2335be8ad1',
+                name: 'Fantastic Fresh Salad',
+                image: 'https://loremflickr.com/640/480?lock=2292181989588992',
+                link: 'https://dirty-genius.net'
+            },
+            {
+                id: '33762ee3-056d-48de-bdce-c95111bbf5ab',
+                name: 'Unbranded Concrete Mouse',
+                image: 'https://picsum.photos/seed/9f0aJR/640/480',
+                link: 'https://dimpled-lad.org'
+            },
+            {
+                id: '2b26d8c2-344c-4cba-9f10-7cc0019246cd',
+                name: 'Bespoke Fresh Mouse',
+                image: 'https://picsum.photos/seed/0fqrWYR/640/480',
+                link: 'https://angelic-gripper.biz/'
+            },
+            {
+                id: '090259ed-47bb-4766-8558-30b1777d6465',
+                name: 'Rustic Bronze Salad',
+                image: 'https://picsum.photos/seed/vGwcW9nN2/640/480',
+                link: 'https://kosher-empire.name'
+            },
+            {
+                id: '1888e736-de44-4089-84a1-76033c8e6e74',
+                name: 'Elegant Soft Fish',
+                image: 'https://picsum.photos/seed/gNd6gFWJ/640/480',
+                link: 'https://filthy-veto.info/'
+            }
+        ]
+    }"
+    >
+      <div class="categories-container">
+        <template x-for="category in categories" :key="category.id">
+          <div class="category-card">
+            <a :href="category.link" target="_blank">
+              <img :src="category.image" :alt="category.name" />
+              <h3 x-text="category.name"></h3>
+            </a>
+          </div>
+        </template>
+      </div>
+
+      <div class="category">
+        <div class="small-card">
+          <template x-for="category in categories" :key="category.id">
+            <div class="category-image">
+              <img src="assets/images/cat-1.jpg" alt="shoes" />
+            </div>
+            <div class="category-details" x-text="category.name"></div>
+          </template>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

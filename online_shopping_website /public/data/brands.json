@@ -1,0 +1,52 @@
+{
+  "brand": [
+    {
+      "id": "bd35e7d8-6033-4471-becb-d179822d1762",
+      "name": "Keyboard",
+      "image": "assets/images/vendor-1.jpg",
+      "link": "https://private-mankind.com/"
+    },
+    {
+      "id": "1fd68360-11c0-4285-9fc8-dcd73f468de7",
+      "name": "Cheese",
+      "image": "assets/images/vendor-2.jpg",
+      "link": "https://thorough-print.name/"
+    },
+    {
+      "id": "eb7e52dd-54c4-4982-aa9e-4d9a13ad4b30",
+      "name": "Chair",
+      "image": "assets/images/vendor-3.jpg",
+      "link": "https://spectacular-reinscription.net/"
+    },
+    {
+      "id": "a0a8c91c-f2e1-44de-906d-e36e57701146",
+      "name": "Pants",
+      "image": "assets/images/vendor-4.jpg",
+      "link": "https://blushing-pattern.net/"
+    },
+    {
+      "id": "24814efb-c11b-43ec-b1e3-95fa3578ba80",
+      "name": "Shoes",
+      "image": "assets/images/vendor-5.jpg",
+      "link": "https://quixotic-dimension.com"
+    },
+    {
+      "id": "0a60550b-b445-423f-b7f5-08206be2171a",
+      "name": "Fish",
+      "image": "assets/images/vendor-6.jpg",
+      "link": "https://kindhearted-mozzarella.com/"
+    },
+    {
+      "id": "d1a58266-9507-41e5-82ff-87112f15a201",
+      "name": "Keyboard",
+      "image": "assets/images/vendor-7.jpg",
+      "link": "https://gleaming-spreadsheet.net"
+    },
+    {
+      "id": "95d6932c-4ac0-41fc-a807-f456c0fefd7c",
+      "name": "Bacon",
+      "image": "assets/images/vendor-8.jpg",
+      "link": "https://limping-controller.info"
+    }
+  ]
+}
