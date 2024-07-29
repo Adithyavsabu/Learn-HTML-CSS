@@ -255,25 +255,30 @@
             <h2 class="strip-heading">FEATURED PRODUCTS</h2>
             <div class="strip-dot"></div>
           </div>
-        <div x-data="fetchProducts()" x-init="init()">
-          <div class="featured-product">
-            <template x-for="product in products" :key= "product.id">
-              <div class="product-card">
-                <img class="product-image" x-bind:src="product.image"  alt="product1" />
-                <h2 class="product-heading" x-text="product.name"></h2>
-                <div class="product-price">
-                  <p x-text="product.price"></p>
-                  <span class="strikethrough" x-text="product.price"></span>
+          <div x-data="fetchProducts()" x-init="init()">
+            <div class="featured-product">
+              <template x-for="product in products" :key="product.id">
+                <div class="product-card">
+                  <img
+                    class="product-image"
+                    x-bind:src="product.image"
+                    alt="product1"
+                  />
+                  <h2 class="product-heading" x-text="product.name"></h2>
+                  <div class="product-price">
+                    <p x-text="product.price"></p>
+                    <span class="strikethrough" x-text="product.price"></span>
+                  </div>
+                  <div class="product-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star half-checked"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
                 </div>
-                <div class="product-rating">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star half-checked"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-              </div>
-            </template>
+              </template>
+            </div>
           </div>
         </div>
       </section>
@@ -312,9 +317,13 @@
 
           <div x-data="fetchProducts()" x-init="init()">
             <div class="featured-product">
-              <template x-for="product in products" :key= "product.id">
+              <template x-for="product in products" :key="product.id">
                 <div class="product-card">
-                  <img class="product-image" x-bind:src="product.image"  alt="product1" />
+                  <img
+                    class="product-image"
+                    x-bind:src="product.image"
+                    alt="product1"
+                  />
                   <h2 class="product-heading" x-text="product.name"></h2>
                   <div class="product-price">
                     <p x-text="product.price"></p>
@@ -330,7 +339,7 @@
                 </div>
               </template>
             </div>
-          </div>  
+          </div>
         </div>
       </section>
       <!-- recent products ends here  -->
@@ -338,11 +347,11 @@
       <!-- brand starts here -->
       <section>
         <div class="container">
-          <div x-data="fetchImages()" x-init="init()">
-            <div class="slider1">
-              <div class="brand">
-                <template x-for="brand in brands" :key= "brand.id"> 
-                <img x-bind:src="brand.image" alt="brand" />
+          <div class="slider1">
+            <div class="brand">
+              <div x-data="fetchImages()" x-init="init()">
+                <template x-for="brand in brands" :key="brand.id">
+                  <img x-bind:src="brand.image" alt="brand" />
                 </template>
               </div>
             </div>
@@ -350,8 +359,6 @@
         </div>
       </section>
       <!-- brand ends here -->
-
-
     </main>
     <!-- footer starts here  -->
     <footer>

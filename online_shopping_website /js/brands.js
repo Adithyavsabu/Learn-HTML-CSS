@@ -9,6 +9,7 @@ function fetchImages() {
         }
         const data = await response.json();
         this.brands = data.brands;
+        console.log("brands", brands);
       } catch (error) {
         console.error("Failed to fetch data:", error);
       }
