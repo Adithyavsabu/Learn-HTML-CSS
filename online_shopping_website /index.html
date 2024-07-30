@@ -8,10 +8,6 @@
     <meta name="description" content="Small description" />
     <meta name="keywords" content="SEO keywords" />
     <title>Online Shopping Website</title>
-    <script
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js"
-      defer
-    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -231,16 +227,79 @@
             <h2 class="strip-heading">CATEGORIES</h2>
             <div class="strip-dot"></div>
           </div>
-          <div x-data="fetchData()" x-init="init()">
-            <div class="category">
-              <template x-for="category in categories" :key="category.id">
-                <div class="small-card">
-                  <div class="category-image">
-                    <img x-bind:src="category.image" alt="" />
-                  </div>
-                  <div class="category-details" x-text="category.name"></div>
-                </div>
-              </template>
+          <div class="category">
+            <div class="small-card">
+              <div class="category-image">
+                <img src="assets/images/cat-1.jpg" alt="dress" />
+              </div>
+              <div class="category-details">Category Name</div>
+            </div>
+            <div class="small-card">
+              <div class="category-image">
+                <img src="assets/images/cat-2.jpg" alt="camera" />
+              </div>
+              <div class="category-details">Category Name</div>
+            </div>
+            <div class="small-card">
+              <div class="category-image">
+                <img src="assets/images/cat-3.jpg" alt="shoes" />
+              </div>
+              <div class="category-details">Category Name</div>
+            </div>
+            <div class="small-card">
+              <div class="category-image">
+                <img src="assets/images/cat-4.jpg" alt="cream" />
+              </div>
+              <div class="category-details">Category Name</div>
+            </div>
+            <div class="small-card">
+              <div class="category-image">
+                <img src="assets/images/cat-4.jpg" alt="cream" />
+              </div>
+              <div class="category-details">Category Name</div>
+            </div>
+            <div class="small-card">
+              <div class="category-image">
+                <img src="assets/images/cat-3.jpg" alt="shoes" />
+              </div>
+              <div class="category-details">Category Name</div>
+            </div>
+            <div class="small-card">
+              <div class="category-image">
+                <img src="assets/images/cat-2.jpg" alt="camera" />
+              </div>
+              <div class="category-details">Category Name</div>
+            </div>
+            <div class="small-card">
+              <div class="category-image">
+                <img src="assets/images/cat-1.jpg" alt="dress" />
+              </div>
+              <div class="category-details">Category Name</div>
+            </div>
+
+            <div class="small-card">
+              <div class="category-image">
+                <img src="assets/images/cat-2.jpg" alt="camera" />
+              </div>
+              <div class="category-details">Category Name</div>
+            </div>
+            <div class="small-card">
+              <div class="category-image">
+                <img src="assets/images/cat-4.jpg" alt="cream" />
+              </div>
+              <div class="category-details">Category Name</div>
+            </div>
+            <div class="small-card">
+              <div class="category-image">
+                <img src="assets/images/cat-1.jpg" alt="dress" />
+              </div>
+              <div class="category-details">Category Name</div>
+            </div>
+            <div class="small-card">
+              <div class="category-image">
+                <img src="assets/images/cat-3.jpg" alt="shoes" />
+              </div>
+              <div class="category-details">Category Name</div>
             </div>
           </div>
         </div>
@@ -255,29 +314,160 @@
             <h2 class="strip-heading">FEATURED PRODUCTS</h2>
             <div class="strip-dot"></div>
           </div>
-          <div x-data="fetchProducts()" x-init="init()">
-            <div class="featured-product">
-              <template x-for="product in products" :key="product.id">
-                <div class="product-card">
-                  <img
-                    class="product-image"
-                    x-bind:src="product.image"
-                    alt="product1"
-                  />
-                  <h2 class="product-heading" x-text="product.name"></h2>
-                  <div class="product-price">
-                    <p x-text="product.price"></p>
-                    <span class="strikethrough" x-text="product.price"></span>
-                  </div>
-                  <div class="product-rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star half-checked"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </div>
-              </template>
+
+          <div class="featured-product">
+            <div class="product-card">
+              <img
+                class="product-image"
+                src="assets/images/product-1.jpg"
+                alt="product1"
+              />
+              <h2 class="product-heading">Product Name Goes Here</h2>
+              <div class="product-price">
+                <p>$123.00</p>
+                <span class="strikethrough">$123.00</span>
+              </div>
+
+              <div class="product-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star half-checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+            <div class="product-card">
+              <img
+                class="product-image"
+                src="assets/images/product-2.jpg"
+                alt="product2"
+              />
+              <h2 class="product-heading">Product Name Goes Here</h2>
+              <div class="product-price">
+                <p>$123.00</p>
+                <span class="strikethrough">$123.00</span>
+              </div>
+              <div class="product-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+            <div class="product-card">
+              <img
+                class="product-image"
+                src="assets/images/product-3.jpg"
+                alt="product3"
+              />
+              <h2 class="product-heading">Product Name Goes Here</h2>
+              <div class="product-price">
+                <p>$123.00</p>
+                <span class="strikethrough">$123.00</span>
+              </div>
+              <div class="product-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+            <div class="product-card">
+              <img
+                class="product-image"
+                src="assets/images/product-4.jpg"
+                alt="product4"
+              />
+              <h2 class="product-heading">Product Name Goes Here</h2>
+              <div class="product-price">
+                <p>$123.00</p>
+                <span class="strikethrough">$123.00</span>
+              </div>
+              <div class="product-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+            <div class="product-card">
+              <img
+                class="product-image"
+                src="assets/images/product-5.jpg"
+                alt="product5"
+              />
+              <h2 class="product-heading">Product Name Goes Here</h2>
+              <div class="product-price">
+                <p>$123.00</p>
+                <span class="strikethrough">$123.00</span>
+              </div>
+              <div class="product-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+            <div class="product-card">
+              <img
+                class="product-image"
+                src="assets/images/product-6.jpg"
+                alt="product6"
+              />
+              <h2 class="product-heading">Product Name Goes Here</h2>
+              <div class="product-price">
+                <p>$123.00</p>
+                <span class="strikethrough">$123.00</span>
+              </div>
+              <div class="product-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+            <div class="product-card">
+              <img
+                class="product-image"
+                src="assets/images/product-7.jpg"
+                alt="product7"
+              />
+              <h2 class="product-heading">Product Name Goes Here</h2>
+              <div class="product-price">
+                <p>$123.00</p>
+                <span class="strikethrough">$123.00</span>
+              </div>
+              <div class="product-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+            <div class="product-card">
+              <img
+                class="product-image"
+                src="assets/images/product-8.jpg"
+                alt="product8"
+              />
+              <h2 class="product-heading">Product Name Goes Here</h2>
+              <div class="product-price">
+                <p>$123.00</p>
+                <span class="strikethrough">$123.00</span>
+              </div>
+              <div class="product-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
             </div>
           </div>
         </div>
@@ -315,29 +505,159 @@
             <div class="strip-dot"></div>
           </div>
 
-          <div x-data="fetchProducts()" x-init="init()">
-            <div class="featured-product">
-              <template x-for="product in products" :key="product.id">
-                <div class="product-card">
-                  <img
-                    class="product-image"
-                    x-bind:src="product.image"
-                    alt="product1"
-                  />
-                  <h2 class="product-heading" x-text="product.name"></h2>
-                  <div class="product-price">
-                    <p x-text="product.price"></p>
-                    <span class="strikethrough" x-text="product.price"></span>
-                  </div>
-                  <div class="product-rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star half-checked"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </div>
-              </template>
+          <div class="featured-product">
+            <div class="product-card">
+              <img
+                class="product-image"
+                src="assets/images/product-1.jpg"
+                alt="product1"
+              />
+              <h2 class="product-heading">Product Name Goes Here</h2>
+              <div class="product-price">
+                <p>$123.00</p>
+                <span class="strikethrough">$123.00</span>
+              </div>
+
+              <div class="product-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star half-checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+            <div class="product-card">
+              <img
+                class="product-image"
+                src="assets/images/product-2.jpg"
+                alt="product2"
+              />
+              <h2 class="product-heading">Product Name Goes Here</h2>
+              <div class="product-price">
+                <p>$123.00</p>
+                <span class="strikethrough">$123.00</span>
+              </div>
+              <div class="product-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+            <div class="product-card">
+              <img
+                class="product-image"
+                src="assets/images/product-3.jpg"
+                alt="product3"
+              />
+              <h2 class="product-heading">Product Name Goes Here</h2>
+              <div class="product-price">
+                <p>$123.00</p>
+                <span class="strikethrough">$123.00</span>
+              </div>
+              <div class="product-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+            <div class="product-card">
+              <img
+                class="product-image"
+                src="assets/images/product-4.jpg"
+                alt="product4"
+              />
+              <h2 class="product-heading">Product Name Goes Here</h2>
+              <div class="product-price">
+                <p>$123.00</p>
+                <span class="strikethrough">$123.00</span>
+              </div>
+              <div class="product-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+            <div class="product-card">
+              <img
+                class="product-image"
+                src="assets/images/product-5.jpg"
+                alt="product5"
+              />
+              <h2 class="product-heading">Product Name Goes Here</h2>
+              <div class="product-price">
+                <p>$123.00</p>
+                <span class="strikethrough">$123.00</span>
+              </div>
+              <div class="product-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+            <div class="product-card">
+              <img
+                class="product-image"
+                src="assets/images/product-6.jpg"
+                alt="product6"
+              />
+              <h2 class="product-heading">Product Name Goes Here</h2>
+              <div class="product-price">
+                <p>$123.00</p>
+                <span class="strikethrough">$123.00</span>
+              </div>
+              <div class="product-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+            <div class="product-card">
+              <img
+                class="product-image"
+                src="assets/images/product-7.jpg"
+                alt="product7"
+              />
+              <h2 class="product-heading">Product Name Goes Here</h2>
+              <div class="product-price">
+                <p>$123.00</p>
+                <span class="strikethrough">$123.00</span>
+              </div>
+              <div class="product-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+            <div class="product-card">
+              <img
+                class="product-image"
+                src="assets/images/product-8.jpg"
+                alt="product8"
+              />
+              <h2 class="product-heading">Product Name Goes Here</h2>
+              <div class="product-price">
+                <p>$123.00</p>
+                <span class="strikethrough">$123.00</span>
+              </div>
+              <div class="product-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
             </div>
           </div>
         </div>
@@ -345,15 +665,19 @@
       <!-- recent products ends here  -->
 
       <!-- brand starts here -->
+
       <section>
         <div class="container">
           <div class="slider1">
             <div class="brand">
-              <div x-data="fetchImages()" x-init="init()">
-                <template x-for="brand in brands" :key="brand.id">
-                  <img x-bind:src="brand.image" alt="brand" />
-                </template>
-              </div>
+              <img src="assets/images/vendor-1.jpg" alt="img1" />
+              <img src="assets/images/vendor-2.jpg" alt="img2" />
+              <img src="assets/images/vendor-3.jpg" alt="img3" />
+              <img src="assets/images/vendor-4.jpg" alt="img4" />
+              <img src="assets/images/vendor-5.jpg" alt="img5" />
+              <img src="assets/images/vendor-6.jpg" alt="img6" />
+              <img src="assets/images/vendor-7.jpg" alt="img7" />
+              <img src="assets/images/vendor-8.jpg" alt="img8" />
             </div>
           </div>
         </div>
@@ -485,9 +809,7 @@
     </footer>
 
     <!-- footer ends here  -->
-    <script src="js/categories.js"></script>
-    <script src="js/products.js"></script>
-    <script src="js/brands.js"></script>
+
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script>
