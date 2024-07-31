@@ -17,23 +17,23 @@
   gap: 10px;
 }
 
-.top-bar ul {
+/* .top-bar ul {
   display: flex;
   flex-direction: row;
   gap: 10px;
   font-size: 14px;
   padding: 0;
   margin: 0;
-}
+} */
 
-.top-bar li {
+/* .top-bar li {
   text-decoration: none;
 }
 
 .top-bar select {
   border: none;
   background-color: white;
-}
+} */
 
 .main-header {
   background-color: #fff;
@@ -49,13 +49,10 @@
 .logo-container a {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   font-size: 35px;
   font-weight: 600;
-  padding: 0;
-}
-
-.logo-container div {
-  padding: 0 10px;
 }
 
 .logo-container div:nth-of-type(1) {
@@ -71,6 +68,8 @@
 .search-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .search-container input[type="text"] {
   width: 100%;
@@ -81,7 +80,7 @@
 .search-container button {
   background-color: white;
   border: 1px solid rgb(202, 199, 199);
-  padding: 8px 15px;
+  padding: 8.5px 15px;
   cursor: pointer;
   border-left: none;
 }
@@ -98,8 +97,15 @@
 }
 
 /* navbar starts here */
-.navbar {
+.navbar-wrapper {
   background-color: #343a40;
+}
+
+.navbar-wrapper ul {
+  color: white;
+  padding: 0;
+  margin: 0;
+  gap: 5px;
 }
 
 .navbar-style {
@@ -142,8 +148,7 @@
 }
 
 .cart {
-  display: flex;
-  gap: 25px;
+  gap: 20px;
 }
 
 .cart a {
@@ -163,27 +168,24 @@
 /* navbar ends  here */
 
 /* services starts here */
-.services {
-  gap: 20px;
-  display: flex;
-  justify-content: space-between;
-}
 
 .service-icon {
   font-size: 36px;
   color: #ffd333;
+  padding: 1rem 0rem;
 }
 
 .small-card {
   display: flex;
-  width: 22%;
+  /* width: 22%; */
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
-  text-align: center;
+  text-align: left;
   flex-direction: row;
   gap: 15px;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
+  margin-bottom: 1rem;
 }
 /* services ends  here */
 
@@ -205,19 +207,19 @@
 
 /* category section starts here  */
 
-.category {
+/* .category {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 16px;
-}
+} */
 
-.category .small-card {
+/* .category .small-card {
   padding: 0;
   gap: 0;
   width: calc(25% - 12px);
-}
+} */
 
 .category-image {
   height: 100px;
@@ -245,14 +247,18 @@
 
 .footer {
   background-color: #343a40;
-  padding: 60px 0px;
+  padding: 40px 0px;
+}
+
+.footer ul {
+  padding: 0;
 }
 
 .footer-top {
   display: grid;
   flex-direction: row;
   justify-content: space-between;
-  padding: 30px 0px;
+  /* padding: 30px 0px; */
   grid-template-columns: 37% 1fr 1fr 1fr;
 }
 
@@ -265,12 +271,14 @@
 }
 
 .footer-cards i {
-  padding: 0px 10px;
+  padding-right: 20px;
 }
+
 .footer-cards p {
   margin-bottom: 8px;
   text-align: left;
 }
+
 .footer-cards li + li {
   margin: 5px 0px;
 }
@@ -279,11 +287,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 30px 0px;
+  /* padding: 20px 0px; */
+  align-items: center;
 }
 
 .footer-bottom p {
   color: #f5f5f5;
+  margin: 0;
 }
 
 .footer-details button {
@@ -298,6 +308,7 @@
 .dash {
   display: flex;
   align-items: center;
+  padding: 1rem 0px;
 }
 .dash-style {
   flex: 1;
@@ -338,10 +349,11 @@
 .hero-highlight .bx-wrapper {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
-  box-shadow: 0;
+  box-shadow: none;
   border: 0px;
   width: 100%;
   height: 100%;
+  margin: 0;
 }
 .hero-highlight .bx-viewport {
   min-height: 100%;
@@ -356,10 +368,12 @@
   font-family: Arial;
   font-weight: bold;
   color: #666;
-  padding-top: 20px;
-  margin-bottom: 60px;
+  bottom: 15px;
+  /* padding-top: 20px; */
+  /* margin-bottom: 60px; */
 }
 .hero-highlight .bx-wrapper .bx-pager.bx-default-pager a {
+  border-radius: 0;
   background: transparent;
   border: 1px solid white;
 }
@@ -367,10 +381,6 @@
   width: 100%;
   height: 100%;
   position: relative;
-}
-img {
-  max-width: 100%;
-  height: 100%;
 }
 
 .hero-content {
@@ -386,18 +396,19 @@ img {
   justify-content: center;
 }
 .hero-image {
-  object-fit: cover;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100%;
+  object-fit: fill;
   width: 100%;
+  height: 100%;
 }
-h1 {
+.bx-wrapper .hero-image img {
+  height: 100%;
+  object-fit: cover;
+}
+.hero-section h1 {
   font-size: 3rem;
   font-weight: 600;
 }
-p {
+.hero-section p {
   text-align: center;
   margin-bottom: 30px;
 }
@@ -417,13 +428,13 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
+  padding: 1.5rem 0px;
 }
 
 .btn,
@@ -436,7 +447,7 @@ p {
   border-radius: 5px;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
-h3 {
+.hero-content h3 {
   color: white;
 }
 .offer-btn {
@@ -446,22 +457,24 @@ h3 {
 /* hero ends here  */
 
 /* featured products */
-.featured-product {
+/* .featured-product {
   display: flex;
   gap: 30px;
   justify-content: center;
   align-items: center;
   justify-items: center;
   flex-wrap: wrap;
-}
+} */
 .product-card {
-  width: 250px;
+  /* width: 250px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: white;
+  margin-bottom: 1rem;
 }
+
 .product-heading {
   font-size: 1rem;
   align-items: center;
@@ -473,19 +486,19 @@ h3 {
 }
 .product-price {
   display: flex;
-
-  p {
-    margin-top: 3px;
-    font-size: 20px;
-    font-weight: 600;
-  }
-  .strikethrough {
-    color: #6c757d !important;
-    margin-left: 10px;
-    margin-top: 4px;
-    text-decoration: line-through;
-  }
 }
+.product-price p {
+  margin-top: 3px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.product-price .strikethrough {
+  color: #6c757d !important;
+  margin-left: 10px;
+  margin-top: 4px;
+  text-decoration: line-through;
+}
+
 .product-rating {
   margin-bottom: 10px;
 }
@@ -498,6 +511,11 @@ h3 {
 }
 
 /* brand  */
+.slider {
+  display: flex;
+  align-items: center;
+}
+
 .brand {
   display: flex;
   gap: 40px;
@@ -506,6 +524,7 @@ h3 {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   width: 100%;
+
   img {
     width: 20vh;
     height: 20vh;

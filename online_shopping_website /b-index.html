@@ -41,23 +41,25 @@
               <div
                 class="top-bar-options justify-content-start justify-content-xl-end"
               >
-                <ul>
-                  <li>
-                    <select name="account" id="account">
-                      <option value="my-account">My Account</option>
-                    </select>
-                  </li>
-                  <li>
-                    <select name="currency" id="currency">
-                      <option value="USD">USD</option>
-                    </select>
-                  </li>
-                  <li>
-                    <select name="language" id="language">
-                      <option value="EN">EN</option>
-                    </select>
-                  </li>
-                </ul>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown button
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -68,7 +70,7 @@
         <div class="container text-align-center">
           <div class="row align-items-center">
             <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-              <div class="logo-container">
+              <div class="logo-container align-items-sm-center">
                 <a href="index.html">
                   <div>MULTI</div>
                   <div>SHOP</div>
@@ -96,46 +98,42 @@
           </div>
         </div>
       </div>
-      <div class="navbar">
+      <div class="navbar-wrapper">
         <div class="container">
           <div class="row">
-            <div class="col">
-              <div class="row">
-                <div class="col">
-                  <div class="categories">
-                    <i class="fa fa-list" style="font-size: 20px"></i>
-                    <select name="categories" id="categories">
-                      <option value="categories">Categories</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="list">
-                    <ul>
-                      <li>Home</li>
-                      <li>Shop</li>
-                      <li>Shop Detail</li>
-                      <li>Page</li>
-                      <li>Contact</li>
-                    </ul>
-                  </div>
-                </div>
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="categories">
+                <!-- <i class="fa fa-list" style="font-size: 20px"></i> -->
+                <select name="categories" id="categories">
+                  <option value="categories">Categories</option>
+                </select>
               </div>
             </div>
+            <div
+              class="col-12 col-md-8 col-lg-9 d-flex justify-content-between align-items-center"
+            >
+              <div class="d-flex">
+                <ul class="d-flex">
+                  <li>Home</li>
+                  <li>Shop</li>
+                  <li>ShopDetail</li>
+                  <li>Page</li>
+                  <li>Contact</li>
+                </ul>
+              </div>
 
-            <div class="col">
-              <div class="cart">
+              <div class="cart d-flex">
                 <a href="#">
                   <i
                     class="fa fa-heart"
-                    style="font-size: 18px; color: #ffd333"
+                    style="font-size: 15px; color: #ffd333"
                   ></i>
                   <span class="badge">0</span>
                 </a>
                 <a href="#">
                   <i
                     class="fa fa-shopping-cart"
-                    style="font-size: 18px; color: #ffd333"
+                    style="font-size: 15px; color: #ffd333"
                   >
                   </i>
                   <span class="badge">0</span>
@@ -152,62 +150,66 @@
       <!-- hero starts here -->
       <section>
         <div class="container">
-          <div class="hero-section">
-            <div class="hero-highlight">
-              <div class="bxslider">
-                <div class="hero-card">
-                  <div class="hero-image">
-                    <img src="assets/images/carousel-3.jpg" alt="image3" />
+          <div class="row">
+            <div class="col-12 col-lg-8">
+              <div class="hero-highlight">
+                <div class="bxslider">
+                  <div class="hero-card">
+                    <div class="hero-image">
+                      <img src="assets/images/carousel-3.jpg" alt="image3" />
+                    </div>
+                    <div class="hero-content">
+                      <h1>Kids Fashion</h1>
+                      <p>
+                        Lorem ipsum magna amet lorem magna erat diam stet.
+                        Sadips<br />
+                        duo stet amet amet ndiam elotr ipsum diam
+                      </p>
+                      <a href="#" class="btn">Shop Now</a>
+                    </div>
                   </div>
-                  <div class="hero-content">
-                    <h1>Kids Fashion</h1>
-                    <p>
-                      Lorem ipsum magna amet lorem magna erat diam stet.
-                      Sadips<br />
-                      duo stet amet amet ndiam elotr ipsum diam
-                    </p>
-                    <a href="#" class="btn">Shop Now</a>
+                  <div class="hero-card">
+                    <div class="hero-image">
+                      <img src="assets/images/carousel-2.jpg" alt="image2" />
+                    </div>
+                    <div class="hero-content">
+                      <h1>Kids Fashion</h1>
+                      <p>
+                        Lorem ipsum magna amet lorem magna erat diam stet.
+                        Sadips<br />
+                        duo stet amet amet ndiam elotr ipsum diam
+                      </p>
+                      <a href="#" class="btn">Shop Now</a>
+                    </div>
                   </div>
-                </div>
-                <div class="hero-card">
-                  <div class="hero-image">
-                    <img src="assets/images/carousel-2.jpg" alt="image2" />
-                  </div>
-                  <div class="hero-content">
-                    <h1>Kids Fashion</h1>
-                    <p>
-                      Lorem ipsum magna amet lorem magna erat diam stet.
-                      Sadips<br />
-                      duo stet amet amet ndiam elotr ipsum diam
-                    </p>
-                    <a href="#" class="btn">Shop Now</a>
-                  </div>
-                </div>
-                <div class="hero-card">
-                  <div class="hero-image">
-                    <img src="assets/images/carousel-1.jpg" alt="image1" />
-                  </div>
-                  <div class="hero-content">
-                    <h1>Kids Fashion</h1>
-                    <p>
-                      Lorem ipsum magna amet lorem magna erat diam stet.
-                      Sadips<br />
-                      duo stet amet amet ndiam elotr ipsum diam
-                    </p>
-                    <a href="#" class="btn">Shop Now</a>
+                  <div class="hero-card">
+                    <div class="hero-image">
+                      <img src="assets/images/carousel-1.jpg" alt="image1" />
+                    </div>
+                    <div class="hero-content">
+                      <h1>Kids Fashion</h1>
+                      <p>
+                        Lorem ipsum magna amet lorem magna erat diam stet.
+                        Sadips<br />
+                        duo stet amet amet ndiam elotr ipsum diam
+                      </p>
+                      <a href="#" class="btn">Shop Now</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="first-offer">
-              <h4>SAVE 20%</h4>
-              <h3>Special Offer</h3>
-              <a href="#" class="offer-btn">Shop Now</a>
-            </div>
-            <div class="second-offer">
-              <h4>SAVE 20%</h4>
-              <h3>Special Offer</h3>
-              <a href="#" class="offer-btn">Shop Now</a>
+            <div class="col-12 col-lg-4">
+              <div class="first-offer">
+                <h4>SAVE 20%</h4>
+                <h3>Special Offer</h3>
+                <a href="#" class="offer-btn">Shop Now</a>
+              </div>
+              <div class="second-offer mt-3">
+                <h4>SAVE 20%</h4>
+                <h3>Special Offer</h3>
+                <a href="#" class="offer-btn">Shop Now</a>
+              </div>
             </div>
           </div>
         </div>
@@ -220,31 +222,37 @@
       <section>
         <div class="container">
           <div class="row">
-            <div class="col-12 col-md">
+            <div class="col-12 col-md-6 col-lg-3">
               <div class="small-card">
                 <div class="service-icon">
                   <i class="fa fa-check"></i>
                 </div>
+                <h6>Quality products</h6>
               </div>
-              <div>Quality products</div>
             </div>
-            <div class="small-card">
-              <div class="service-icon">
-                <i class="fa fa-truck"></i>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="small-card">
+                <div class="service-icon">
+                  <i class="fa fa-truck"></i>
+                </div>
+                <h6>Free Shipping</h6>
               </div>
-              <div>Free Shipping</div>
             </div>
-            <div class="small-card">
-              <div class="service-icon">
-                <i class="fa fa-arrows-h"></i>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="small-card">
+                <div class="service-icon">
+                  <i class="fa fa-arrows-h"></i>
+                </div>
+                <h6>14 Day Return</h6>
               </div>
-              <div>14 Day Return</div>
             </div>
-            <div class="small-card">
-              <div class="service-icon">
-                <i class="fa fa-phone"></i>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="small-card">
+                <div class="service-icon">
+                  <i class="fa fa-phone"></i>
+                </div>
+                <h6>24/7 Support</h6>
               </div>
-              <div>24/7 Support</div>
             </div>
           </div>
         </div>
@@ -258,16 +266,86 @@
             <h2 class="strip-heading">CATEGORIES</h2>
             <div class="strip-dot"></div>
           </div>
-          <div x-data="fetchData()" x-init="init()">
-            <div class="category">
-              <template x-for="category in categories" :key="category.id">
-                <div class="small-card">
-                  <div class="category-image">
-                    <img x-bind:src="category.image" alt="" />
-                  </div>
-                  <div class="category-details" x-text="category.name"></div>
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="small-card">
+                <div class="category-image">
+                  <img src="assets/images/cat-1.jpg" alt="dress" />
                 </div>
-              </template>
+                <div class="category-details">Category Name</div>
+              </div>
+              <div class="small-card">
+                <div class="category-image">
+                  <img src="assets/images/cat-2.jpg" alt="camera" />
+                </div>
+                <div class="category-details">Category Name</div>
+              </div>
+              <div class="small-card">
+                <div class="category-image">
+                  <img src="assets/images/cat-3.jpg" alt="shoes" />
+                </div>
+                <div class="category-details">Category Name</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="small-card">
+                <div class="category-image">
+                  <img src="assets/images/cat-4.jpg" alt="cream" />
+                </div>
+                <div class="category-details">Category Name</div>
+              </div>
+              <div class="small-card">
+                <div class="category-image">
+                  <img src="assets/images/cat-3.jpg" alt="shoes" />
+                </div>
+                <div class="category-details">Category Name</div>
+              </div>
+              <div class="small-card">
+                <div class="category-image">
+                  <img src="assets/images/cat-2.jpg" alt="camera" />
+                </div>
+                <div class="category-details">Category Name</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="small-card">
+                <div class="category-image">
+                  <img src="assets/images/cat-1.jpg" alt="dress" />
+                </div>
+                <div class="category-details">Category Name</div>
+              </div>
+              <div class="small-card">
+                <div class="category-image">
+                  <img src="assets/images/cat-2.jpg" alt="camera" />
+                </div>
+                <div class="category-details">Category Name</div>
+              </div>
+              <div class="small-card">
+                <div class="category-image">
+                  <img src="assets/images/cat-4.jpg" alt="cream" />
+                </div>
+                <div class="category-details">Category Name</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="small-card">
+                <div class="category-image">
+                  <img src="assets/images/cat-1.jpg" alt="dress" />
+                </div>
+                <div class="category-details">Category Name</div>
+              </div>
+              <div class="small-card">
+                <div class="category-image">
+                  <img src="assets/images/cat-3.jpg" alt="shoes" />
+                </div>
+                <div class="category-details">Category Name</div>
+              </div>
+              <div class="small-card">
+                <div class="category-image">
+                  <img src="assets/images/cat-4.jpg" alt="cream" />
+                </div>
+                <div class="category-details">Category Name</div>
+              </div>
             </div>
           </div>
         </div>
@@ -282,29 +360,168 @@
             <h2 class="strip-heading">FEATURED PRODUCTS</h2>
             <div class="strip-dot"></div>
           </div>
-          <div x-data="fetchProducts()" x-init="init()">
-            <div class="featured-product">
-              <template x-for="product in products" :key="product.id">
-                <div class="product-card">
-                  <img
-                    class="product-image"
-                    x-bind:src="product.image"
-                    alt="product1"
-                  />
-                  <h2 class="product-heading" x-text="product.name"></h2>
-                  <div class="product-price">
-                    <p x-text="product.price"></p>
-                    <span class="strikethrough" x-text="product.price"></span>
-                  </div>
-                  <div class="product-rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star half-checked"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
+
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <div class="product-card">
+                <img
+                  class="product-image"
+                  src="assets/images/product-1.jpg"
+                  alt="product1"
+                />
+                <h2 class="product-heading">Product Name Goes Here</h2>
+                <div class="product-price">
+                  <p>$123.00</p>
+                  <span class="strikethrough">$123.00</span>
                 </div>
-              </template>
+
+                <div class="product-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star half-checked"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+              <div class="product-card">
+                <img
+                  class="product-image"
+                  src="assets/images/product-2.jpg"
+                  alt="product2"
+                />
+                <h2 class="product-heading">Product Name Goes Here</h2>
+                <div class="product-price">
+                  <p>$123.00</p>
+                  <span class="strikethrough">$123.00</span>
+                </div>
+                <div class="product-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <div class="product-card">
+                <img
+                  class="product-image"
+                  src="assets/images/product-3.jpg"
+                  alt="product3"
+                />
+                <h2 class="product-heading">Product Name Goes Here</h2>
+                <div class="product-price">
+                  <p>$123.00</p>
+                  <span class="strikethrough">$123.00</span>
+                </div>
+                <div class="product-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+              <div class="product-card">
+                <img
+                  class="product-image"
+                  src="assets/images/product-4.jpg"
+                  alt="product4"
+                />
+                <h2 class="product-heading">Product Name Goes Here</h2>
+                <div class="product-price">
+                  <p>$123.00</p>
+                  <span class="strikethrough">$123.00</span>
+                </div>
+                <div class="product-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <div class="product-card">
+                <img
+                  class="product-image"
+                  src="assets/images/product-5.jpg"
+                  alt="product5"
+                />
+                <h2 class="product-heading">Product Name Goes Here</h2>
+                <div class="product-price">
+                  <p>$123.00</p>
+                  <span class="strikethrough">$123.00</span>
+                </div>
+                <div class="product-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+              <div class="product-card">
+                <img
+                  class="product-image"
+                  src="assets/images/product-6.jpg"
+                  alt="product6"
+                />
+                <h2 class="product-heading">Product Name Goes Here</h2>
+                <div class="product-price">
+                  <p>$123.00</p>
+                  <span class="strikethrough">$123.00</span>
+                </div>
+                <div class="product-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <div class="product-card">
+                <img
+                  class="product-image"
+                  src="assets/images/product-7.jpg"
+                  alt="product7"
+                />
+                <h2 class="product-heading">Product Name Goes Here</h2>
+                <div class="product-price">
+                  <p>$123.00</p>
+                  <span class="strikethrough">$123.00</span>
+                </div>
+                <div class="product-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+              <div class="product-card">
+                <img
+                  class="product-image"
+                  src="assets/images/product-8.jpg"
+                  alt="product8"
+                />
+                <h2 class="product-heading">Product Name Goes Here</h2>
+                <div class="product-price">
+                  <p>$123.00</p>
+                  <span class="strikethrough">$123.00</span>
+                </div>
+                <div class="product-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -316,16 +533,20 @@
 
       <section class="special-offers">
         <div class="container">
-          <div class="offers-content">
-            <div class="first-offer">
-              <h4>SAVE 20%</h4>
-              <h3>Special Offer</h3>
-              <a href="#" class="offer-btn">Shop Now</a>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="first-offer">
+                <h4>SAVE 20%</h4>
+                <h3>Special Offer</h3>
+                <a href="#" class="offer-btn">Shop Now</a>
+              </div>
             </div>
-            <div class="second-offer">
-              <h4>SAVE 20%</h4>
-              <h3>Special Offer</h3>
-              <a href="#" class="offer-btn">Shop Now</a>
+            <div class="col-12 col-md-6">
+              <div class="second-offer">
+                <h4>SAVE 20%</h4>
+                <h3>Special Offer</h3>
+                <a href="#" class="offer-btn">Shop Now</a>
+              </div>
             </div>
           </div>
         </div>
@@ -334,7 +555,6 @@
       <!-- special offers ends here  -->
 
       <!-- recent products starts here  -->
-
       <section class="recent-products">
         <div class="container">
           <div class="strip">
@@ -342,29 +562,167 @@
             <div class="strip-dot"></div>
           </div>
 
-          <div x-data="fetchProducts()" x-init="init()">
-            <div class="featured-product">
-              <template x-for="product in products" :key="product.id">
-                <div class="product-card">
-                  <img
-                    class="product-image"
-                    x-bind:src="product.image"
-                    alt="product1"
-                  />
-                  <h2 class="product-heading" x-text="product.name"></h2>
-                  <div class="product-price">
-                    <p x-text="product.price"></p>
-                    <span class="strikethrough" x-text="product.price"></span>
-                  </div>
-                  <div class="product-rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star half-checked"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <div class="product-card">
+                <img
+                  class="product-image"
+                  src="assets/images/product-1.jpg"
+                  alt="product1"
+                />
+                <h2 class="product-heading">Product Name Goes Here</h2>
+                <div class="product-price">
+                  <p>$123.00</p>
+                  <span class="strikethrough">$123.00</span>
                 </div>
-              </template>
+
+                <div class="product-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star half-checked"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+              <div class="product-card">
+                <img
+                  class="product-image"
+                  src="assets/images/product-2.jpg"
+                  alt="product2"
+                />
+                <h2 class="product-heading">Product Name Goes Here</h2>
+                <div class="product-price">
+                  <p>$123.00</p>
+                  <span class="strikethrough">$123.00</span>
+                </div>
+                <div class="product-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <div class="product-card">
+                <img
+                  class="product-image"
+                  src="assets/images/product-3.jpg"
+                  alt="product3"
+                />
+                <h2 class="product-heading">Product Name Goes Here</h2>
+                <div class="product-price">
+                  <p>$123.00</p>
+                  <span class="strikethrough">$123.00</span>
+                </div>
+                <div class="product-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+              <div class="product-card">
+                <img
+                  class="product-image"
+                  src="assets/images/product-4.jpg"
+                  alt="product4"
+                />
+                <h2 class="product-heading">Product Name Goes Here</h2>
+                <div class="product-price">
+                  <p>$123.00</p>
+                  <span class="strikethrough">$123.00</span>
+                </div>
+                <div class="product-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <div class="product-card">
+                <img
+                  class="product-image"
+                  src="assets/images/product-5.jpg"
+                  alt="product5"
+                />
+                <h2 class="product-heading">Product Name Goes Here</h2>
+                <div class="product-price">
+                  <p>$123.00</p>
+                  <span class="strikethrough">$123.00</span>
+                </div>
+                <div class="product-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+              <div class="product-card">
+                <img
+                  class="product-image"
+                  src="assets/images/product-6.jpg"
+                  alt="product6"
+                />
+                <h2 class="product-heading">Product Name Goes Here</h2>
+                <div class="product-price">
+                  <p>$123.00</p>
+                  <span class="strikethrough">$123.00</span>
+                </div>
+                <div class="product-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <div class="product-card">
+                <img
+                  class="product-image"
+                  src="assets/images/product-7.jpg"
+                  alt="product7"
+                />
+                <h2 class="product-heading">Product Name Goes Here</h2>
+                <div class="product-price">
+                  <p>$123.00</p>
+                  <span class="strikethrough">$123.00</span>
+                </div>
+                <div class="product-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+              <div class="product-card">
+                <img
+                  class="product-image"
+                  src="assets/images/product-8.jpg"
+                  alt="product8"
+                />
+                <h2 class="product-heading">Product Name Goes Here</h2>
+                <div class="product-price">
+                  <p>$123.00</p>
+                  <span class="strikethrough">$123.00</span>
+                </div>
+                <div class="product-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -372,15 +730,19 @@
       <!-- recent products ends here  -->
 
       <!-- brand starts here -->
+
       <section>
         <div class="container">
           <div class="slider1">
             <div class="brand">
-              <div x-data="fetchImages()" x-init="init()">
-                <template x-for="brand in brands" :key="brand.id">
-                  <img x-bind:src="brand.image" alt="brand" />
-                </template>
-              </div>
+              <img src="assets/images/vendor-1.jpg" alt="img1" />
+              <img src="assets/images/vendor-2.jpg" alt="img2" />
+              <img src="assets/images/vendor-3.jpg" alt="img3" />
+              <img src="assets/images/vendor-4.jpg" alt="img4" />
+              <img src="assets/images/vendor-5.jpg" alt="img5" />
+              <img src="assets/images/vendor-6.jpg" alt="img6" />
+              <img src="assets/images/vendor-7.jpg" alt="img7" />
+              <img src="assets/images/vendor-8.jpg" alt="img8" />
             </div>
           </div>
         </div>
@@ -391,121 +753,130 @@
     <footer>
       <div class="footer">
         <div class="container">
-          <div class="footer-top">
-            <div class="footer-cards">
-              <h3>GET IN TOUCH</h3>
-              <p>
-                No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita
-                et et dolor sed dolor. Rebum tempor no vero est magna amet no
-              </p>
-              <ul>
-                <li></li>
-                <li>
-                  <i
-                    class="fa fa-map-marker"
-                    style="font-size: 20px; color: #ffd333"
-                  ></i
-                  >123 street new york
-                </li>
-                <li>
-                  <i
-                    class="fa fa-inbox"
-                    style="font-size: 20px; color: #ffd333"
-                  ></i
-                  >info@example.com
-                </li>
-                <li>
-                  <i
-                    class="fa fa-phone"
-                    style="font-size: 20px; color: #ffd333"
-                  ></i
-                  >+23274678235693475
-                </li>
-              </ul>
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-3">
+              <div class="footer-cards">
+                <h5>GET IN TOUCH</h5>
+                <p>
+                  No dolore ipsum accusam no lorem. Invidunt sed clita kasd
+                  clita et et dolor sed dolor. Rebum tempor no vero est magna
+                  amet no
+                </p>
+                <ul>
+                  <li></li>
+                  <li>
+                    <i
+                      class="fa fa-map-marker"
+                      style="font-size: 20px; color: #ffd333"
+                    ></i
+                    >123 street new york
+                  </li>
+                  <li>
+                    <i
+                      class="fa fa-inbox"
+                      style="font-size: 20px; color: #ffd333"
+                    ></i
+                    >info@example.com
+                  </li>
+                  <li>
+                    <i
+                      class="fa fa-phone"
+                      style="font-size: 20px; color: #ffd333"
+                    ></i
+                    >+23274678235693475
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="footer-cards">
-              <h3>QUICK SHOP</h3>
-              <ul>
-                <li>
-                  <span> <i class="fa fa-angle-right"></i>Home</span>
-                </li>
-                <li>
-                  <span><i class="fa fa-angle-right"></i>Our Shop</span>
-                </li>
-                <li>
-                  <span><i class="fa fa-angle-right"></i>Shop Detail</span>
-                </li>
-                <li>
-                  <span><i class="fa fa-angle-right"></i>Shopping Cart</span>
-                </li>
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="footer-cards">
+                <h5>QUICK SHOP</h5>
+                <ul>
+                  <li>
+                    <span> <i class="fa fa-angle-right"></i>Home</span>
+                  </li>
+                  <li>
+                    <span><i class="fa fa-angle-right"></i>Our Shop</span>
+                  </li>
+                  <li>
+                    <span><i class="fa fa-angle-right"></i>Shop Detail</span>
+                  </li>
+                  <li>
+                    <span><i class="fa fa-angle-right"></i>Shopping Cart</span>
+                  </li>
 
-                <li>
-                  <span><i class="fa fa-angle-right"></i>Checkout</span>
-                </li>
-                <li>
-                  <span><i class="fa fa-angle-right"></i>Contact Us</span>
-                </li>
-              </ul>
+                  <li>
+                    <span><i class="fa fa-angle-right"></i>Checkout</span>
+                  </li>
+                  <li>
+                    <span><i class="fa fa-angle-right"></i>Contact Us</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="footer-cards">
-              <h3>MY SHOP</h3>
-              <ul>
-                <li>
-                  <span> <i class="fa fa-angle-right"></i>Home</span>
-                </li>
-                <li>
-                  <span><i class="fa fa-angle-right"></i>Our Shop</span>
-                </li>
-                <li>
-                  <span><i class="fa fa-angle-right"></i>Shop Detail</span>
-                </li>
-                <li>
-                  <span><i class="fa fa-angle-right"></i>Shopping Cart</span>
-                </li>
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="footer-cards">
+                <h5>MY SHOP</h5>
+                <ul>
+                  <li>
+                    <span> <i class="fa fa-angle-right"></i>Home</span>
+                  </li>
+                  <li>
+                    <span><i class="fa fa-angle-right"></i>Our Shop</span>
+                  </li>
+                  <li>
+                    <span><i class="fa fa-angle-right"></i>Shop Detail</span>
+                  </li>
+                  <li>
+                    <span><i class="fa fa-angle-right"></i>Shopping Cart</span>
+                  </li>
 
-                <li>
-                  <span><i class="fa fa-angle-right"></i>Checkout</span>
-                </li>
-                <li>
-                  <span><i class="fa fa-angle-right"></i>Contact Us</span>
-                </li>
-              </ul>
+                  <li>
+                    <span><i class="fa fa-angle-right"></i>Checkout</span>
+                  </li>
+                  <li>
+                    <span><i class="fa fa-angle-right"></i>Contact Us</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="footer-cards">
-              <h3>NEWS LETTER</h3>
-              <div class="footer-details">
-                <div>
-                  Duo stet tempor ipsum sit amet magna <br />
-                  ipsum tempor est
-                </div>
-                <div class="search-container">
+
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="footer-cards">
+                <h5>NEWS LETTER</h5>
+                <div class="footer-details">
                   <div>
-                    <input type="text" placeholder="YOUR EMAIL ADDRESS" />
+                    Duo stet tempor ipsum sit amet magna ipsum tempor est
                   </div>
-                  <div>
+                  <div class="search-container">
+                    <input type="text" placeholder="YOUR EMAIL ADDRESS" />
                     <button type="submit">SIGNUP</button>
                   </div>
-                </div>
-                <div><h4>FOLLOW US</h4></div>
-                <div class="connect">
-                  <i class="fa fa-twitter-square" style="font-size: 20px"></i>
-                  <i class="fa fa-facebook-f" style="font-size: 20px"></i>
-                  <i class="fa fa-linkedin" style="font-size: 20px"></i>
-                  <i class="fa fa-instagram" style="font-size: 20px"></i>
+                  <h6>FOLLOW US</h6>
+                  <div class="connect">
+                    <i class="fa fa-twitter-square" style="font-size: 20px"></i>
+                    <i class="fa fa-facebook-f" style="font-size: 20px"></i>
+                    <i class="fa fa-linkedin" style="font-size: 20px"></i>
+                    <i class="fa fa-instagram" style="font-size: 20px"></i>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="dash">
             <div class="dash-style"></div>
           </div>
-          <div class="footer-bottom">
-            <p>
-              © Domain. All Rights Reserved. Designed by HTML Codex Distributed
-              By: ThemeWagon
-            </p>
-
-            <img src="assets/images/payments.png" alt="" />
+          <div class="rows">
+            <div class="col-12 col-md-6">
+              <p>
+                © Domain. All Rights Reserved. Designed by HTML CodexDistributed
+                By: ThemeWagon
+              </p>
+            </div>
+            <div class="col-12 col-md-6">
+              <img src="assets/images/payments.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
@@ -514,7 +885,6 @@
     <!-- footer ends here  -->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
-    <script src="js/bootstrap.bundle.js" crossorigin="anonymous"></script>
     <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="js/categories.js"></script>
     <script src="js/products.js"></script>
@@ -524,15 +894,22 @@
       $(function () {
         $(".bxslider").bxSlider({
           mode: "fade",
+          startSlide: 0,
+          slideMargin: 6,
+          infiniteLoop: true,
+          auto: true,
+          autoStart: true,
+          minSlides: 2,
+          maxSlides: 3,
+          // adaptiveHeight: true,
         });
       });
       $(document).ready(function () {
         $(".slider1").bxSlider({
           minSlides: 2,
-          maxSlides: 3,
-          slideMargin: 6,
+          maxSlides: 10,
           auto: true,
-          infiniteLoop: true,
+          autoStart: true,
         });
       });
     </script>

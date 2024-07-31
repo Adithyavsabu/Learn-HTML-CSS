@@ -31,12 +31,28 @@
   html {
     font-size: 14px;
   }
+  .hero-highlight {
+    padding-bottom: 20px;
+  }
+  /* .small-card {
+    margin: 5px 0px;
+  } */
+  .first-offer {
+    margin-bottom: 10px;
+  }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   html {
     font-size: 12px;
+  }
+  .search-container {
+    padding: 4px 0px;
+  }
+
+  .list ul {
+    padding: 1rem 0rem;
   }
 }
 
